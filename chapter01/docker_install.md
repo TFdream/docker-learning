@@ -32,3 +32,24 @@
 更多的细节就不多说了，Docker 已经为我们准备了好了各系统的安装包，毕竟安装 Docker 并不是我们所要掌握的重点，所以这里我就直接给出安装的命令了。
 
 [传送门](https://www.docker.com/products/container-runtime)
+
+## 在MacOS中安装Docker 
+有以下两种方式：
+* 使用 Homebrew 安装；
+* 手动下载安装
+
+### 使用 Homebrew 安装
+macOS 我们可以使用 Homebrew 来安装 Docker。
+
+Homebrew 的 Cask 已经支持 Docker for Mac，因此可以很方便的使用 Homebrew Cask 来进行安装：
+```
+$ brew install --cask --appdir=/Applications docker
+```
+在载入 Docker app 后，点击 Next，可能会询问你的 macOS 登陆密码，你输入即可。之后会弹出一个 Docker 运行的提示窗口，状态栏上也有有个小鲸鱼的图标
+
+### 手动下载安装
+如果需要手动下载，请点击以下链接下载 [Stable](https://download.docker.com/mac/stable/Docker.dmg) 或 [Edge](https://download.docker.com/mac/edge/Docker.dmg) 版本的 Docker for Mac。
+
+如同 macOS 其它软件一样，安装也非常简单，双击下载的 .dmg 文件，然后将鲸鱼图标拖拽到 Application 文件夹即可。
+
+参考资料：https://www.runoob.com/docker/macos-docker-install.html
